@@ -557,7 +557,7 @@ if %{__grep} -q '^CONFIG_XEN=y$' .config; then
 # fields.  In Xen guest kernels, the vDSO tells the dynamic linker to
 # search in nosegneg subdirectories and to match this extra hwcap bit
 # in the ld.so.cache file.
-hwcap 1 nosegneg"
+#hwcap 1 nosegneg"
 fi
 if [ ! -s ldconfig-%{name}.conf ]; then
     echo > ldconfig-%{name}.conf "\
